@@ -26,6 +26,7 @@ body{
     margin: 0 10px;
     cursor: pointer;
     position: relative;
+    transition:  0.7s ease-in;
 }
 .panel.active{
     flex: 5;
@@ -37,7 +38,7 @@ body{
     color: wheat;
     font-size: 30px;
     opacity: 0;
-    font-weight: lighter;
+    font-weight: 500;
 }
 .panel.active h3{
     opacity: 1;

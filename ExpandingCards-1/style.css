@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+
+}
+.container{
+    width: 90vw;
+    display: flex;
+}
+.panel{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    flex: 0.5;
+    border-radius: 50px;
+    margin: 0 10px;
+    cursor: pointer;
+    position: relative;
+}
+.panel.active{
+    flex: 5;
+}
+.panel h3{
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    color: wheat;
+    font-size: 30px;
+    opacity: 0;
+    font-weight: lighter;
+}
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}

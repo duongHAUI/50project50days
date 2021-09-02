@@ -37,6 +37,7 @@ body{
     background-color: #3498db;
     top: 50%;
     transform: translateY(-50%);
+    transition: 0.5s ;
 }
 .circle{
     height: 30px;
@@ -48,11 +49,12 @@ body{
     border-radius: 50%;
     border:3px solid #e0e0e0;
     background-color: white;
+    transition: border 0.7s ease;
     z-index: 1;
 }
 .circle.active{
     border:3px solid #3498db;
-    transition: border 0.5s ease;
+    transition: border 0.7s ease;
 }
 .btn{
     margin-top: 50px;
